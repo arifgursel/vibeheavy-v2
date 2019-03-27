@@ -1,0 +1,16 @@
+/* This stylesheet is meant for custom styles, on top of the Bone Template */
+ .logo {
+  height: 25px;
+  width: auto;
+  margin-top: 15px;
+}
+.wdds {
+  height: 50px;
+  width: auto;
+  margin-top: 10px;
+}
+.icon-inline {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline;
+}

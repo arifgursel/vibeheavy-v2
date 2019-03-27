@@ -1,0 +1,156 @@
+extends layout
+
+block content
+    // Header
+    header
+        .container
+            // Branding
+            a.brand(href='/')
+                img.dark-brand.logo(alt='', src='images/logo-black.png')
+                img.light-brand.logo(alt='', src='images/logo-white.png')
+            // Menu
+            .menu
+    // Page Title Hero
+    section.hero.dark.vcenter
+        // Background
+        .bg.faded.parallax(style='background-image: url(../images/logo-pattern.png);')
+        .container.text-center
+            // Content
+            h1 #{title}
+    // Some section
+    section
+        .title-block
+            h3 Browse through some examples of our Tribe's VIBE
+            h5 An agency is just a group of people you believe in.
+        .slider.carousel(data-visible='4', auto-slide='')
+            ul.slides
+                li.slide.text-center.item.vcenter
+                    img.thumb(alt='', src='../images/shop/02.jpg')
+                li.slide.text-center.item.vcenter
+                    img.thumb(alt='', src='../images/shop/07.jpg')
+                li.slide.text-center.item.vcenter
+                    img.thumb(alt='', src='../images/shop/04.jpg')
+                li.slide.text-center.item.vcenter
+                    img.thumb(alt='', src='../images/shop/05.jpg')
+                li.slide.text-center.item.vcenter
+                    img.thumb(alt='', src='../images/shop/08.jpg')
+                li.slide.text-center.item.vcenter
+                    img.thumb(alt='', src='../images/shop/09.jpg')
+                li.slide.text-center.item.vcenter
+                    img.thumb(alt='', src='../images/shop/10.jpg')
+    // services section
+    section
+        .container.content.text-center
+            .row
+                .title-block
+                    h3 We offer a full suite of services delivering top notch results for each unique client engagement
+                    h5 Whether digital or physical, we specialize in creating measurably impactful engagements.
+            .row
+                .col-md-6.service
+                    span.icon.ion-monitor.item.icon-inline
+                    span.icon.ion-laptop.item.icon-inline
+                    span.icon.ion-ipad.item.icon-inline
+                    span.icon.ion-iphone.item.icon-inline
+                    span.icon.ion-ipod.item.icon-inline
+                    h4 Digital
+                    h5 Web - Watch - Mobile - Virtual - Augmented
+                    p
+                        | We combine cross platform technology expertise to help our clients explore an ever changing world of technology convergence. Our clients often have great ideas but need execution to bring those ideas to life. We have developed enterprise and consumer solutions for various industries. Let us help you bring your brand to life. No matter where it will be engaged, it's a digital experience.
+                .col-md-6.service
+                    span.icon.ion-search.item.icon-inline
+                    span.icon.ion-fork.item.icon-inline
+                    span.icon.ion-wand.item.icon-inline
+                    span.icon.ion-headphone.item.icon-inline
+                    span.icon.ion-bonfire.item.icon-inline
+                    h4 Physical
+                    h5 See - Taste - Touch - Hear - Feel
+                    p
+                        | We're a team of experiential curators focused on human centered approaches that drive measurable brand discovery in physical spaces. By developing branded experiences that engage the basic triggers of discovery we develop innovative [x]periences that drive value to your target customer segment. How we experience and discover the world around us hasn't changed, so we align to the basic human emotions.
+            .row
+                h6 Be sure to check out all of the 
+                    a(href='services') services we offer.
+            .row
+        //- .container
+        //-     // Portfolio grid
+        //-     .grid.no-spacing
+        //-     .grid-sizer
+        //-     // Portfolio item
+        //-     a.grid-item(href='../pages/portfolio-single.html')
+        //-         .thumb(style='background-image: url(../images/thumbs/07.png)')
+        //-         .caption
+        //-         .type Photography + Video
+        //-         .description
+        //-             h4 Land of God
+        //-             p We bring ideas to live. Lorem ipsum dolor sit amet.
+        //-     // Portfolio item
+        //-     a.grid-item(href='../pages/portfolio-single-2.html')
+        //-         .thumb(style='background-image: url(../images/thumbs/02.png)')
+        //-         .caption
+        //-         .type Design + Art Direction
+        //-         .description
+        //-             h4 Weekly Planner
+        //-             p We bring ideas to live. Lorem ipsum dolor sit amet.
+        //-     // Portfolio item
+        //-     a.grid-item.tall(href='../pages/portfolio-single.html')
+        //-         .thumb(style='background-image: url(../images/thumbs/03.png)')
+        //-         .caption
+        //-         .type Design + Art Direction
+        //-         .description
+        //-             h4 Suit Inc.
+        //-             p We bring ideas to live. Lorem ipsum dolor sit amet.
+        //-     // Portfolio item
+        //-     a.grid-item(href='../pages/portfolio-single-2.html')
+        //-         .thumb(style='background-image: url(../images/thumbs/04.png)')
+        //-         .caption
+        //-         .type Drone + Photography
+        //-         .description
+        //-             h4 Life on Mars 
+        //-             p We bring ideas to live. Lorem ipsum dolor sit amet.
+        //-     // Portfolio item
+        //-     a.grid-item(href='../pages/portfolio-single.html')
+        //-         .thumb(style='background-image: url(../images/thumbs/05.png)')
+        //-         .caption
+        //-         .type Design + Architecture
+        //-         .description
+        //-             h4 Concept
+        //-             p We bring ideas to live. Lorem ipsum dolor sit amet.
+        //-     // Portfolio item
+        //-     a.grid-item.large(href='../pages/portfolio-single-2.html')
+        //-         .thumb(style='background-image: url(../images/thumbs/06.png)')
+        //-         .caption
+        //-         .type Photography
+        //-         .description
+        //-             h4 Land of God #2
+        //-             p We bring ideas to live. Lorem ipsum dolor sit amet.
+        //-     // Portfolio item
+        //-     a.grid-item(href='../pages/portfolio-single.html')
+        //-         .thumb(style='background-image: url(../images/thumbs/07.png)')
+        //-         .caption
+        //-         .type Design + Art Direction
+        //-         .description
+        //-             h4 Concept
+        //-             p We bring ideas to live. Lorem ipsum dolor sit amet.
+        //-     // Portfolio item
+        //-     a.grid-item(href='../pages/portfolio-single-2.html')
+        //-         .thumb(style='background-image: url(../images/thumbs/08.png)')
+        //-         .caption
+        //-         .type Design + Art Direction
+        //-         .description
+        //-             h4 Concept
+        //-             p We bring ideas to live. Lorem ipsum dolor sit amet.
+        //-     // Portfolio item
+        //-     a.grid-item(href='../pages/portfolio-single.html')
+        //-         .thumb(style='background-image: url(../images/thumbs/09.png)')
+        //-         .caption
+        //-         .type Architecture + Art Direction
+        //-         .description
+        //-             h4 The Architect
+        //-             p We bring ideas to live. Lorem ipsum dolor sit amet.
+        //-     // Portfolio item
+        //-     a.grid-item.wide(href='../pages/portfolio-single-2.html')
+        //-         .thumb(style='background-image: url(../images/thumbs/10.png)')
+        //-         .caption
+        //-         .type Photography + Art Direction
+        //-         .description
+        //-             h4 The Drive of Your Life
+        //-             p We bring ideas to live. Lorem ipsum dolor sit amet.

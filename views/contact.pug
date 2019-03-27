@@ -1,26 +1,55 @@
 extends layout
 
 block content
-  .pb-2.mt-2.mb-4.border-bottom
-    h3 Contact Form
-
-  form(method='POST')
-    input(type='hidden', name='_csrf', value=_csrf)
-    if (unknownUser)
-      .form-group.row
-        label(class='col-md-2 col-form-label font-weight-bold', for='name') Name
-        .col-md-8
-          input.form-control(type='text', name='name', id='name', autocomplete='name', autofocus=true)
-      .form-group.row
-        label(class='col-md-2 col-form-label font-weight-bold', for='email') Email
-        .col-md-8
-          input.form-control(type='text', name='email', id='email', autocomplete='email')
-    .form-group.row
-      label(class='col-md-2 col-form-label font-weight-bold', for='message') Please describe the issue or your suggestion
-      .col-md-8
-        textarea.form-control(name='message', id='message', rows='7', autofocus=(!unknownUser).toString())
-    .form-group
-      .offset-md-2.col-md-8.p-1
-        button.btn.btn-primary(type='submit')
-          i.far.fa-envelope.fa-sm
-          | Send
+  // Header
+  header
+    .container
+      // Branding
+      a.brand(href='/')
+        img.dark-brand.logo(alt='', src='images/logo-black.png')
+        img.light-brand.logo(alt='', src='images/logo-white.png')
+      // Menu
+      .menu
+  // Page Title Hero
+  section.hero.dark.vcenter
+    // Background
+    .bg.faded.parallax(style='background-image: url(../images/logo-pattern.png);')
+    .container.text-center
+      // Contentus
+      h1 #{title}
+  section
+    .container
+      // Portfolio grid
+      .grid.contact-container
+        .grid-sizer
+        .grid-item.contact-form
+          .inner
+            form(method='POST')
+              .row
+                input(type='hidden', name='_csrf', value=_csrf)
+                if (unknownUser)
+                    .col-md-6
+                      input.form-control(placeholder='Your name', name='name', required='', type='text')
+                    .col-md-6
+                      input.form-control(placeholder='E-mail', name='email', required='', type='email')
+                .col-md-6
+                  input.form-control(placeholder='Phone number', name='phone', type='text')
+                .col-md-6
+                  input.form-control(placeholder='Website', name='website', type='text')
+                .col-md-12
+                  textarea.form-control(placeholder='Message', name='message', required='', autofocus=(!unknownUser).toString())
+                  button#send.btn.btn-default(type='submit') Send
+        .grid-item.contact-details.vcenter
+          .inner
+            p
+              span.bold.accent VIBEHEAVY
+              br
+              | 1201 Third Ave
+              br
+              | Suite 150
+            p
+              | P (+1) 917 284 3481
+              br
+              | F (+1) 206 PLS DONT
+              br
+              | M contact@vibeheavy.com

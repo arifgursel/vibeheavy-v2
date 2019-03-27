@@ -1,0 +1,147 @@
+extends layout
+
+block content
+    // Header
+    header
+        .container
+            // Branding
+            a.brand(href='/')
+                img.dark-brand.logo(alt='', src='images/logo-black.png')
+                img.light-brand.logo(alt='', src='images/logo-white.png')
+            // Menu
+            .menu
+    // Page Title Hero
+    section.hero.dark.vcenter
+        // Background
+        .bg.faded.parallax(style='background-image: url(../images/logo-pattern.png);')
+        .container.text-center
+            // Content
+            h1 #{title}
+    section
+        .container.content
+            .row
+            .col-md-3.service
+                .icon.ion-lightbulb.item
+                h4 Concept Development
+                p We bring ideas to live. Lorem ipsum dolor sit amet.
+            .col-md-3.service
+                .icon.ion-camera.item
+                h4 Photography
+                p We bring ideas to live. Lorem ipsum dolor sit amet.
+            .col-md-3.service
+                .icon.ion-monitor.item
+                h4 UI Design
+                p We bring ideas to live. Lorem ipsum dolor sit amet.
+            .col-md-3.service
+                .icon.ion-stats-bars.item
+                h4 KPI's + Analytics
+                p We bring ideas to live. Lorem ipsum dolor sit amet.
+            .col-md-3.service
+                .icon.ion-email.item
+                h4 UX Research
+                p We bring ideas to live. Lorem ipsum dolor sit amet.
+            .col-md-3.service
+                .icon.ion-pizza.item
+                h4 Fashion Design
+                p We bring ideas to live. Lorem ipsum dolor sit amet.
+            .col-md-3.service
+                .icon.ion-erlenmeyer-flask.item
+                h4 Event Production
+                p We bring ideas to live. Lorem ipsum dolor sit amet.
+            .col-md-3.service
+                .icon.ion-coffee.item
+                h4 Audio Curation
+                p We bring ideas to live. Lorem ipsum dolor sit amet.
+            .col-md-3.service
+                .icon.ion-coffee.item
+                h4 Animation + Motion Graphics
+                p We bring ideas to live. Lorem ipsum dolor sit amet.
+            .col-md-3.service
+                .icon.ion-coffee.item
+                h4 Augmented + Virtual Reality
+                p We bring ideas to live. Lorem ipsum dolor sit amet.
+            .col-md-3.service
+                .icon.ion-coffee.item
+                h4 Film Production + Videography
+                p We bring ideas to live. Lorem ipsum dolor sit amet.
+            .col-md-3.service
+                .icon.ion-coffee.item
+                h4 Product Management + Development
+                p We bring ideas to live. Lorem ipsum dolor sit amet.
+    section.top-line
+        .container.content
+            .row
+            .col-md-6
+                img.standalone(src='../images/shop/wdds-sqr-color.png')
+            .col-md-6
+                .intro
+                h2 Our Skillset
+                h5 UX/UI Design
+                    .progress
+                        .progress-bar.progress-bar-accent(aria-valuemax='100', aria-valuemin='0', aria-valuenow='100', role='progressbar', style='width: 100%')  
+                h5 Product Development
+                    .progress
+                        .progress-bar.progress-bar-accent(aria-valuemax='100', aria-valuemin='0', aria-valuenow='100', role='progressbar', style='width: 100%')  
+                h5 Marketing & Analytics
+                    .progress
+                        .progress-bar.progress-bar-accent(aria-valuemax='100', aria-valuemin='0', aria-valuenow='100', role='progressbar', style='width: 100%')  
+                h5 Content Production
+                    .progress
+                        .progress-bar.progress-bar-accent(aria-valuemax='100', aria-valuemin='0', aria-valuenow='100', role='progressbar', style='width: 100%')  
+                h5 Brand Building
+                    .progress
+                        .progress-bar.progress-bar-accent(aria-valuemax='100', aria-valuemin='0', aria-valuenow='100', role='progressbar', style='width: 100%')  
+    section.content.container.top-line
+        .row
+            .col-md-10.col-md-offset-1.text-center
+            .intro
+                h2.title Choose How To Engage
+            .row
+                .col-md-4
+                    .plan.item
+                        h3 Project Based
+                        .price
+                        | Price Varies
+                        ul
+                            li
+                                strong Best for One Off Projects
+                            li
+                                strong Quick Turn Around
+                            li
+                                strong Pay As You Go
+                            li Dedicated Project Manager
+                            li Consultant Matching
+                            li Project Reports
+                        a.btn.btn-default(href='/contact') Hire Us!
+                .col-md-4
+                    .plan.highlighted.item
+                        h3 Milestone Based
+                        .price
+                        | Price Varies
+                        ul
+                            li
+                                strong Ideal for Multi-Service Projects
+                            li
+                                strong Cohesive Strategy
+                            li
+                                strong Quantitative Marketing
+                            li Dedicated Project Manager
+                            li Consultant Matching
+                            li Milestone Reports
+                        a.btn.btn-default(href='/contact') Learn More!
+                .col-md-4
+                    .plan.item
+                        h3 Retainer Based
+                        .price
+                        | Starts at $25K 
+                        ul
+                            li
+                                strong Companies with Evolving Needs
+                            li
+                                strong An Extension of Your Team
+                            li
+                                strong Idea Inception <-> Final Delivery
+                            li Executive Leadership (CxO For Hire)
+                            li Full Product Lifecycle Management
+                            li Monthly Business Reviews
+                        a.btn.btn-default(href='/contact') Retain Us!

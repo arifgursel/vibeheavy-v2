@@ -1,27 +1,177 @@
 extends layout
 
 block content
-  h1 Hackathon Starter
-  p.lead A boilerplate for Node.js web applications.
-  hr
-  .row
-    .col-md-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-raised(href='#', role='button') View details »
-    .col-md-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-raised(href='#', role='button') View details »
-    .col-md-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-raised(href='#', role='button') View details »
-    .col-md-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-raised(href='#', role='button') View details »
+  // Header
+  header
+    .container
+      // Branding
+      a.brand(href='/')
+        img.dark-brand.logo(alt='', src='images/logo-black.png')
+        img.light-brand.logo(alt='', src='images/logo-white.png')
+      // Menu
+      .menu
+  // Page Title Hero
+  section.hero.dark.vcenter
+    // Background
+    .bg.faded.parallax(style='background-image: url(../images/logo-pattern.png);')
+    .container.text-center
+      // Content
+      h1 #{title}
+  // Some section
+  section
+    .container.content
+      .row
+        .col-md-8.col-md-offset-2
+          .title-block
+            h3 Experiential Brand Builders
+            h5 An agency is just a group of people you believe in.
+          p
+            strong VIBEHEAVY 
+            | is a master experiential marketing agency comprised of a creative collective  of fashion, entertainment and technology innovators headquartered in Seattle with offices in NY, ATL and LA. VIBEHEAVY has deep skill-sets in design, audio curation, technology strategy, product development, content creation, and quantitative experiential marketing focused primarily on  the entertainment vertical often crossing into hospitality, retail and fashion.
+          p
+            | We are a team of geeks, business strategists, technologist, software engineers, fine artists, illustrators, photographers, film makers and social media gurus, essentially creators of all things digital & cool!
+          p
+            | We partner with world-class brands to deliver engaging experiences in both the digital and physical realm. We specialize in brand messaging centered around entertainment driven experiences. Value is delivered through our unique integration of digital agency services, quantitative experiential marketing, event production and our branded offerings.
+  //- Hero & Tera Slider
+  //- section.slider
+  //-   ul.slides
+  //-     // Slide
+  //-     li.slide.dark
+  //-       // Background
+  //-       .hero.fs.vbottom
+  //-         .bg.faded-subtle.parallax(style='background-image: url(images/office/02.jpg);')
+  //-         .container
+  //-           // Content
+  //-           .content
+  //-             h4 Design is our passion.
+  //-             h6 We believe great design should be invisible & the vibe... HEAVY.
+  // services section
+  section.top-line
+    .container.content.text-center
+      .row
+        .title-block
+          h3 We offer a full suite of services delivering top notch results for each unique client engagement
+          h5 Whether digital or physical, we specialize in creating measurably impactful engagements.
+      .row
+        .col-md-6.service
+          span.icon.ion-monitor.item.icon-inline
+          span.icon.ion-laptop.item.icon-inline
+          span.icon.ion-ipad.item.icon-inline
+          span.icon.ion-iphone.item.icon-inline
+          span.icon.ion-ipod.item.icon-inline
+          h4 Digital
+          h5 Web - Watch - Mobile - Virtual - Augmented
+          p
+            | We combine cross platform technology expertise to help our clients explore an ever changing world of technology convergence. Our clients often have great ideas but need execution to bring those ideas to life. We have developed enterprise and consumer solutions for various industries. Let us help you bring your brand to life. No matter where it will be engaged, it's a digital experience.
+        .col-md-6.service
+          span.icon.ion-search.item.icon-inline
+          span.icon.ion-fork.item.icon-inline
+          span.icon.ion-wand.item.icon-inline
+          span.icon.ion-headphone.item.icon-inline
+          span.icon.ion-bonfire.item.icon-inline
+          h4 Physical
+          h5 See - Taste - Touch - Hear - Feel
+          p
+            | We're a team of experiential curators focused on human centered approaches that drive measurable brand discovery in physical spaces. By developing branded experiences that engage the basic triggers of discovery we develop innovative [x]periences that drive value to your target customer segment. How we experience and discover the world around us hasn't changed, so we align to the basic human emotions.
+      .row
+        h6 Be sure to check out all of the 
+            a(href='services') services we offer.
+      //- .row
+      //-   .col-md-6.service
+      //-     .icon.ion-map.item
+      //-     h4 Brand Building
+      //-     h5 SEE - FEEL - HEAR
+      //-     p
+      //-       | We bring ideas to life and re-energize aging brands. We start by defining the brand values for our client, we build upon that foundation to create all the assets a growing brand needs to thrive in physical and digital spaces. This service includes creation of a brand strategy and style guide that can be leveraged in digital and physical product development and the collateral to support advertising, marketing and customer engagement.
+      //-   .col-md-6.service
+      //-     .icon.ion-people.item
+      //-     h4 Event Production
+      //-     h5 SEE - TASTE - TOUCH - SMELL - FEEL - HEAR
+      //-     p
+      //-       | We're a team of experiential curators focused on human centered approaches that drive brand discovery in physical spaces. By developing branded experiences that engage the basic triggers of discovery we develop innovative [x]periences that drive value to your target customer segment. How humans experience and discover the world around us hasn't changed, so we align to basic human emotions driven by digital engagement.
+      //-   .col-md-6.service
+      //-     .icon.ion-analytics.item
+      //-     h4 Digital Design
+      //-     h5 SEE - TOUCH - FEEL
+      //-     p
+      //-       | We are human centered designers and it shows in every VIBEHEAVY experience we create. Design is a critical stage in any product and even service development. Our team consist of talented designers across many mediums. Whether the project focus is UX research and UI design for a new mobile application or SaaS product, or even designing samples for a new clothing line. The team at VIBEHEAVY has you covered.
+      //-   .col-md-6.service
+      //-     .icon.ion-code-working.item
+      //-     h4 Product Development
+      //-     h5 SEE - TASTE - TOUCH - SMELL - FEEL - HEAR
+      //-     p
+      //-       | We combine cross platform technology expertise to help our clients explore an ever changing world of technology convergence. Our clients often have great ideas but need execution to bring those ideas to life. We have developed enterprise and consumer solutions for various industries. Let us help you bring your product idea to life. No matter where it will be engaged, it's a digital experience. After the design phase we develop it right in house!
+  // portfolio section
+  section
+    .container
+      .intro
+        h3 Work Samples
+      // Portfolio grid
+      .grid
+        // Portfolio item
+        .grid-sizer
+        a.grid-item(href='pages/portfolio-single.html')
+          .thumb(style='background-image: url(images/thumbs/07.png)')
+          .caption
+            .type Fashion Design + Film Production
+            .description
+              h4 Black Nail Gang
+              p We're spear-heading a new brand concept to raise awareness of blood cancers in the African American community. Stay Tuned...
+              //- p We're spear-heading a new brand concept that brings the power of street fashion and hip hop culture to the fight to raise awareness of blood cancers in the African American community. Stay Tuned...
+        // Portfolio item
+        a.grid-item(href='pages/portfolio-single-2.html')
+          .thumb(style='background-image: url(images/thumbs/02.png)')
+          .caption
+            .type Interior Design + Art Direction + Web Development
+            .description
+              h4 The Union
+              p We worked with the team at The Union to plan and execute their modular space vision.
+        // Portfolio item
+        a.grid-item.tall(href='pages/portfolio-single.html')
+          .thumb(style='background-image: url(images/thumbs/03.png)')
+          .caption
+            .type Event Production + Animation + Audio Curation / Creation + Video
+            .description
+              h4 Solo Magic
+              p We team up with talented choreography Jade Solomon Curtis to produce elements of her 3D immersive one women show.
+        // Portfolio item
+        a.grid-item(href='pages/portfolio-single-2.html')
+          .thumb(style='background-image: url(images/thumbs/04.png)')
+          .caption
+            .type Event Production + Marketing Strategy + Design + Photography + Video
+            .description
+              h4 AfroTech x Salesforce
+              p We were hired by Salesforce to produce their hiring focused happy hour during the 2018 AfroTech conference in San Francisco.
+        // Portfolio item
+        a.grid-item(href='pages/portfolio-single-2.html')
+          .thumb(style='background-image: url(images/thumbs/04.png)')
+          .caption
+            .type Event Production + Marketing Strategy + Print Design + Photography
+            .description
+              h4 HBCU @ SXSW 
+              p We were hired by the team at OHUB to produce the 2018 OHUB HOUSE activation at SXSW.
+        //- Portfolio item
+        //- a.grid-item.large(href='pages/portfolio-single-2.html')
+        //-   .thumb(style='background-image: url(images/thumbs/06.png)')
+        //-   .caption
+        //-     .type Photography
+        //-     .description
+        //-       h4 Land of God #2
+        //-       p We bring ideas to live. Lorem ipsum dolor sit amet.
+
+        //- Wide Portfolio item
+        a.grid-item.tall(href='pages/portfolio-single-2.html')
+          .thumb(style='background-image: url(images/thumbs/10.png)')
+          .caption
+            .type Brand Design + UX Research + UI Development + Software Development + Product Management
+            .description
+              h4 Discovered
+              p We partnered with music industry pioneer Ali Shaheed Muhammed of the legendary hip-hop super group A Tribe Called Quest to create a powerful music curation platform all about "discovering" the next great recording artist. The goal was to bring the power of a trained DJ ears to proven artist development patterns of the past to power tomorrows tp artist.
+        //- Small Square Portfolio item
+        a.grid-item.large(href='pages/portfolio-single.html')
+          .thumb(style='background-image: url(images/thumbs/06.png)')
+          .caption
+            .type Brand Creation + Logo Design + Audio Production + Event Production
+            .description
+              h4 Culture Misfits
+              p We created a brand to target the counter culture of what is deemed acceptable in terms of corporate America's tone-deaf term "Culture Fit". The goal was to create a brand, podcast and event series where people can tell stories and share empowering experiences of being an impactful non-conforming outlier. The Culture Misfit.
